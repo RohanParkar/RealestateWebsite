@@ -1,0 +1,36 @@
+﻿.button {
+    background-color: #76dbd1;
+    border: none;
+    color: black;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    border-radius: 12px;
+    width: 100%;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("images/sellphoto.jpg");
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+hr {
+    background: white;
+}
+
+.contact-form {
+    background: rgba(0,0,0, .6);
+    color: white;
+    margin-top: 50px;
+    padding: 30px;
+    box-shadow: 0px 0px 10px 3px grey;
+}

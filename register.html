@@ -1,0 +1,306 @@
+<html>
+<head>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		var check = function () {
+			if (document.getElementById('password').value ==
+				document.getElementById('confirm_password').value) {
+				document.getElementById('message').style.color = 'green';
+			document.getElementById('message').innerHTML = 'matching';
+		} else {
+			document.getElementById('message').style.color = 'red';
+			document.getElementById('message').innerHTML = 'not matching';
+		}
+	}
+</script>
+
+	<style>
+		@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+		#social {
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.smGlobalBtn { /* global button class */
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border:2px solid #ddd; /* add border to the buttons */
+    box-shadow: 0 3px 3px #999;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 27px;
+    -moz-border-radius:27px;
+    -webkit-border-radius:27px;
+}
+
+/* facebook button class*/
+.facebookBtn{
+    background: #4060A5;
+}
+
+.facebookBtn:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f09a"; /* add facebook icon */
+}
+
+.facebookBtn:hover{
+    color: #4060A5;
+    background: #fff;
+    border-color: #4060A5; /* change the border color on mouse hover */
+}
+
+/* twitter button class*/
+.twitterBtn{
+    background: #00ABE3;
+}
+
+.twitterBtn:before{
+      font-family: "FontAwesome";
+      content: "\f099"; /* add twitter icon */
+      
+}
+
+.twitterBtn:hover{
+      color: #00ABE3;
+      background: #fff;
+      border-color: #00ABE3;
+}
+
+/* google plus button class*/
+.googleplusBtn{
+    background: #e64522;
+}
+
+.googleplusBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0d5"; /* add googleplus icon */
+}
+
+.googleplusBtn:hover{
+      color: #e64522;
+      background: #fff;
+      border-color: #e64522;
+}
+
+/* linkedin button class*/
+.linkedinBtn{
+    background: #0094BC;
+}
+
+.linkedinBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0e1"; /* add linkedin icon */
+}
+
+.linkedinBtn:hover{
+      color: #0094BC;
+      background: #fff;
+      border-color: #0094BC;
+}
+
+/* pinterest button class*/
+.pinterestBtn{
+    background: #cb2027;
+}
+
+.pinterestBtn:before{
+      font-family: "FontAwesome";
+      content: "\f0d2"; /* add pinterest icon */
+}
+
+.pinterestBtn:hover{
+      color: #cb2027;
+      background: #fff;
+      border-color: #cb2027;
+}
+
+/* tumblr button class*/
+.tumblrBtn{
+    background: #3a5876;
+}
+
+.tumblrBtn:before{
+      font-family: "FontAwesome";
+      content: "\f173"; /* add tumblr icon */
+}
+
+.tumblrBtn:hover{
+      color: #3a5876;
+      background: #fff;
+      border-color: #3a5876;
+}
+
+/* rss button class*/
+.rssBtn{
+    background: #e88845;
+}
+
+.rssBtn:before{
+      font-family: "FontAwesome";
+      content: "\f09e"; /* add rss icon */
+}
+
+.rssBtn:hover{
+      color: #e88845;
+      background: #fff;
+      border-color: #e88845;
+}
+
+
+
+
+	</style>
+
+<!------ Include the above in your HEAD tag ---------->
+</head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+<link rel="stylesheet" href="css/register.css" >
+
+<body>
+	<div class="container">
+		<br>
+		<br>
+		<div class="card bg-light">
+			<article class="card-body mx-auto" style="max-width: 400px;">
+				<h1 class="card-title mt-3 text-center">JAAYDAT.COM</h1>
+				<h4 class="card-title mt-3 text-center">Create Account</h4>
+				<p class="text-center">Get started with your free account</p>
+				<form action="register.php" method="POST" enctype="multipart/form-data">
+					<div class="form-group input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"> <i class="fa fa-user"></i> </span>
+						</div>
+						<input name="fname" class="form-control" placeholder="First name" type="text" required>
+					</div> <!-- form-group// -->
+					<div class="form-group input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"> <i class="fa fa-user"></i> </span>
+						</div>
+						<input name="lname" class="form-control" placeholder="Last name" type="text" required>
+					</div> <!-- form-group// -->
+					<div class="form-group input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+						</div>
+						<input name="email" class="form-control" placeholder="Email address" type="email" required>
+					</div> <!-- form-group// -->
+					<div class="form-group input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+						</div>
+						<input name="phone" class="form-control" placeholder="Phone number" type="text" required>
+					</div> <!-- form-group// -->
+					<div class="form-group input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"> <i class="fa fa-genderless"></i> </span>
+						</div>
+						<select class="custom-select"  name="gender" required>
+							<option value="male">male</option>
+							<option value="female">female</option>
+							<option value="others">others</option>
+						</select>
+					</div> <!-- form-group end.// -->
+					<div class="form-group input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"> <i class="fa fa-map-marker"></i> </span>
+						</div>
+						<input name="city" class="form-control" placeholder="City" type="text" required>
+					</div> <!-- form-group// -->
+					<div class="form-group input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"> <i class="fa fa-map-marker"></i> </span>
+						</div>
+						<input name="state" class="form-control" placeholder="State" type="text" required>
+					</div> <!-- form-group// -->
+					<div class="form-group input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"> <i class="fa fa-globe"></i> </span>
+						</div>
+						<input name="country" class="form-control" placeholder="Country" type="text" required>
+					</div> <!-- form-group// -->
+					<div class="form-group input-group">
+						<div class="input-group-prepend">
+							<label for="avatar"><b>Insert Image:</b></label>
+						</div>
+						<input type="file" id="avatar" name="avatar" accept="image/jpg"  required>
+					</div> <!-- form-group// -->
+					<div class="form-group input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+						</div>
+						<input class="form-control" placeholder="Create password" type="password" onkeyup='check();' id="password" required>
+						
+					</div> <!-- form-group// -->
+					<div class="form-group input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+						</div>
+						<input class="form-control" placeholder="Repeat password" name="password" type="password" id="confirm_password" onkeyup='check();' required>
+					</div> <!-- form-group// --> 
+					<div class="form-group input-group">
+						<div class="input-group-prepend">
+							<strong id='message'></strong>
+						</div>
+					</div> <!-- form-group// -->
+					<div class="form-group">
+						<button type="submit" class="btn btn-primary btn-block" value="submit" > Create Account  </button>
+					</div> <!-- form-group// -->      
+					<p class="text-center">Have an account? <a href="login.html" class="text-info">Sign in now</a></p>                                                                 
+				</form>
+			</article>
+		</div> <!-- card.// -->
+
+	</div> 
+	<!--container end.//-->
+
+	<br><br>
+	<article class="bg-secondary mb-3">  
+		<div class="card-body text-center" style="background-color:#C4F0EB ">
+			<div class="row">
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-2">
+				<h3 align="center">FEEDBACK</h3>
+				<P align="center" >Please send us your ideas, bug reports, suggestions! Any feedback would be appreciated.</P>
+			</div>
+			<div class="col-md-2">
+				<h3 align="center" >RECENT NEWS</h3>
+				<P align="center" >Footer with solid color background and a contact form, Easily add subscribe and contact forms without any server-side integration.</P>
+			</div>
+			<div class="col-md-2">
+				<h3 align="center" >CONTACT</h3>
+				<P align="center" >+91 9967451605</P>
+				<P align="center" >+91 9967451605</P>
+				<P align="center" >+91 9967451605</P>
+			</div>
+			<div class="col-md-3">
+			</div>
+			</div>
+			<br/>
+			<br/>
+			<div class="row">
+			<div class="col-md-5">
+			</div>
+			<div class="col-md-2">
+					 <a class="facebookBtn smGlobalBtn" href="#" ></a>&nbsp;&nbsp;
+					 <a class="twitterBtn smGlobalBtn" href="#" ></a>&nbsp;&nbsp;
+					 <a class="googleplusBtn smGlobalBtn" href="#" ></a>&nbsp;&nbsp;
+					 <a class="linkedinBtn smGlobalBtn" href="#" ></a><br><br>
+			</div>
+			<div class="col-md-5">
+			</div>
+			</div>
+		
+		</article>
+	</body>
+	</html>
